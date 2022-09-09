@@ -1,0 +1,13 @@
+
+<h1> MonstersKill GAME </h1>
+
+<form action="#" method="post">
+    <input type="text" role="button" name="pseudo" placeholder="Pseudo" required>
+    <button href="#" type="submit"> 
+        <span>Attaquer</span>
+    </button>
+</form>
+{% if pseudo %}
+<p> {{ pseudo }} a vaincu {{ compteurkill }} monsters!</p>
+<p> {{ liste_monstre_vaincus }} ont succombé aux coup du joueur</p>
+{% endif %}
